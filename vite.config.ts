@@ -4,9 +4,10 @@ import { defineConfig } from 'vite';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [
     vanillaExtractPlugin(),
-    react({}),
+    react(),
   ],
   test: {
     coverage: {
